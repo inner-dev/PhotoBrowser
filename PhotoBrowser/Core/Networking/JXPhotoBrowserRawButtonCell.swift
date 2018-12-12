@@ -49,7 +49,7 @@ open class JXPhotoBrowserRawButtonCell: JXPhotoBrowserNetworkingCell {
         rawButton.sizeToFit()
         rawButton.bounds.size.width += 14
         rawButton.center = CGPoint(x: contentView.bounds.width / 2,
-                                   y: contentView.bounds.height - 25 - rawButton.bounds.height)
+                                   y: contentView.bounds.height - 30 - rawButton.bounds.height)
     }
     
     /// 刷新数据
