@@ -8,12 +8,125 @@
 
 /* Begin PBXBuildFile section */
 		0A94789F21C0A005002C430E /* PhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A94789D21C0A005002C430E /* PhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9478C721C0A485002C430E /* JXPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478A721C0A485002C430E /* JXPhotoBrowserProgressView.swift */; };
+		0A9478C821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478A821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift */; };
+		0A9478C921C0A485002C430E /* JXNetworkingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478A921C0A485002C430E /* JXNetworkingDataSource.swift */; };
+		0A9478CA21C0A485002C430E /* JXRawImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478AA21C0A485002C430E /* JXRawImageDataSource.swift */; };
+		0A9478CB21C0A485002C430E /* JXPhotoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478AB21C0A485002C430E /* JXPhotoLoader.swift */; };
+		0A9478CC21C0A485002C430E /* JXPhotoBrowserNetworkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478AC21C0A485002C430E /* JXPhotoBrowserNetworkingCell.swift */; };
+		0A9478CD21C0A485002C430E /* JXPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478AD21C0A485002C430E /* JXPhotoBrowser.swift */; };
+		0A9478CE21C0A485002C430E /* JXPhotoBrowserFadeTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478AF21C0A485002C430E /* JXPhotoBrowserFadeTransitioning.swift */; };
+		0A9478CF21C0A485002C430E /* JXPhotoBrowserZoomTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B021C0A485002C430E /* JXPhotoBrowserZoomTransitioning.swift */; };
+		0A9478D021C0A485002C430E /* JXPhotoBrowserPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B121C0A485002C430E /* JXPhotoBrowserPresentationController.swift */; };
+		0A9478D121C0A485002C430E /* JXPhotoBrowserTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B221C0A485002C430E /* JXPhotoBrowserTransitioning.swift */; };
+		0A9478D221C0A485002C430E /* UICollectionView+JX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B421C0A485002C430E /* UICollectionView+JX.swift */; };
+		0A9478D321C0A485002C430E /* UIViewController+JX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B521C0A485002C430E /* UIViewController+JX.swift */; };
+		0A9478D421C0A485002C430E /* JXNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B621C0A485002C430E /* JXNamespace.swift */; };
+		0A9478D521C0A485002C430E /* JXNumberPageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B821C0A485002C430E /* JXNumberPageControlDelegate.swift */; };
+		0A9478D621C0A485002C430E /* JXDefaultPageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478B921C0A485002C430E /* JXDefaultPageControlDelegate.swift */; };
+		0A9478D721C0A485002C430E /* JXPhotoBrowserBaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478BA21C0A485002C430E /* JXPhotoBrowserBaseDelegate.swift */; };
+		0A9478D821C0A485002C430E /* JXPhotoBrowserBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478BB21C0A485002C430E /* JXPhotoBrowserBaseCell.swift */; };
+		0A9478D921C0A485002C430E /* JXLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478BC21C0A485002C430E /* JXLocalDataSource.swift */; };
+		0A9478DA21C0A485002C430E /* JXPhotoBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478BE21C0A485002C430E /* JXPhotoBrowserDelegate.swift */; };
+		0A9478DB21C0A485002C430E /* JXPhotoBrowserTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478BF21C0A485002C430E /* JXPhotoBrowserTransitioningDelegate.swift */; };
+		0A9478DC21C0A485002C430E /* JXPhotoBrowserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C021C0A485002C430E /* JXPhotoBrowserDataSource.swift */; };
+		0A9478DD21C0A485002C430E /* JXPhotoBrowserZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C221C0A485002C430E /* JXPhotoBrowserZoomAnimator.swift */; };
+		0A9478DE21C0A485002C430E /* JXPhotoBrowserFadePresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C321C0A485002C430E /* JXPhotoBrowserFadePresentingAnimator.swift */; };
+		0A9478DF21C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C421C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift */; };
+		0A9478E021C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C521C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift */; };
+		0A9478E121C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C621C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift */; };
+		0A9478E621C0A49E002C430E /* JXKingfisherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478E321C0A49E002C430E /* JXKingfisherLoader.swift */; };
+		0A94791521C0A810002C430E /* LongPressedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478FF21C0A80F002C430E /* LongPressedViewController.swift */; };
+		0A94791621C0A810002C430E /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790021C0A80F002C430E /* CustomCellViewController.swift */; };
+		0A94791721C0A810002C430E /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A94790121C0A80F002C430E /* Photos.plist */; };
+		0A94791821C0A810002C430E /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790221C0A80F002C430E /* BaseCollectionViewCell.swift */; };
+		0A94791921C0A810002C430E /* LocalNumberControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790321C0A80F002C430E /* LocalNumberControlViewController.swift */; };
+		0A94791A21C0A810002C430E /* LocalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790421C0A80F002C430E /* LocalImageViewController.swift */; };
+		0A94791B21C0A810002C430E /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790521C0A80F002C430E /* BaseCollectionViewController.swift */; };
+		0A94791C21C0A810002C430E /* ZoomFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790621C0A80F002C430E /* ZoomFrameViewController.swift */; };
+		0A94791D21C0A810002C430E /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790721C0A80F002C430E /* ZoomViewController.swift */; };
+		0A94791E21C0A810002C430E /* LocalDefaultPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790821C0A80F002C430E /* LocalDefaultPageControlViewController.swift */; };
+		0A94791F21C0A810002C430E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A94790921C0A80F002C430E /* Images.xcassets */; };
+		0A94792021C0A810002C430E /* NetworkingImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790A21C0A80F002C430E /* NetworkingImageViewController.swift */; };
+		0A94792121C0A810002C430E /* ResourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790B21C0A80F002C430E /* ResourceModel.swift */; };
+		0A94792321C0A810002C430E /* CustomDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790D21C0A810002C430E /* CustomDelegate.swift */; };
+		0A94792421C0A810002C430E /* GIFImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790E21C0A810002C430E /* GIFImageViewController.swift */; };
+		0A94792521C0A810002C430E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790F21C0A810002C430E /* HomeViewController.swift */; };
+		0A94792621C0A810002C430E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94791021C0A810002C430E /* CustomCell.swift */; };
+		0A94792721C0A810002C430E /* RawImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94791121C0A810002C430E /* RawImageViewController.swift */; };
+		0A94792821C0A810002C430E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A94791321C0A810002C430E /* LaunchScreen.xib */; };
+		0A94792B21C0A853002C430E /* PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94789A21C0A005002C430E /* PhotoBrowser.framework */; };
+		0A94792E21C0A9DA002C430E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94792C21C0A9DA002C430E /* AppDelegate.swift */; };
+		0A94793621C0C1D2002C430E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94793521C0C1D2002C430E /* Kingfisher.framework */; };
+		0A94793C21C0C39E002C430E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94793521C0C1D2002C430E /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A94792921C0A831002C430E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A94789121C0A005002C430E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A94789921C0A005002C430E;
+			remoteInfo = PhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A94789A21C0A005002C430E /* PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A94789D21C0A005002C430E /* PhotoBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoBrowser.h; sourceTree = "<group>"; };
 		0A94789E21C0A005002C430E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9478A721C0A485002C430E /* JXPhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserProgressView.swift; sourceTree = "<group>"; };
+		0A9478A821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserRawButtonCell.swift; sourceTree = "<group>"; };
+		0A9478A921C0A485002C430E /* JXNetworkingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXNetworkingDataSource.swift; sourceTree = "<group>"; };
+		0A9478AA21C0A485002C430E /* JXRawImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXRawImageDataSource.swift; sourceTree = "<group>"; };
+		0A9478AB21C0A485002C430E /* JXPhotoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoLoader.swift; sourceTree = "<group>"; };
+		0A9478AC21C0A485002C430E /* JXPhotoBrowserNetworkingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserNetworkingCell.swift; sourceTree = "<group>"; };
+		0A9478AD21C0A485002C430E /* JXPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowser.swift; sourceTree = "<group>"; };
+		0A9478AF21C0A485002C430E /* JXPhotoBrowserFadeTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserFadeTransitioning.swift; sourceTree = "<group>"; };
+		0A9478B021C0A485002C430E /* JXPhotoBrowserZoomTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomTransitioning.swift; sourceTree = "<group>"; };
+		0A9478B121C0A485002C430E /* JXPhotoBrowserPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserPresentationController.swift; sourceTree = "<group>"; };
+		0A9478B221C0A485002C430E /* JXPhotoBrowserTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserTransitioning.swift; sourceTree = "<group>"; };
+		0A9478B421C0A485002C430E /* UICollectionView+JX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+JX.swift"; sourceTree = "<group>"; };
+		0A9478B521C0A485002C430E /* UIViewController+JX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+JX.swift"; sourceTree = "<group>"; };
+		0A9478B621C0A485002C430E /* JXNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXNamespace.swift; sourceTree = "<group>"; };
+		0A9478B821C0A485002C430E /* JXNumberPageControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXNumberPageControlDelegate.swift; sourceTree = "<group>"; };
+		0A9478B921C0A485002C430E /* JXDefaultPageControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDefaultPageControlDelegate.swift; sourceTree = "<group>"; };
+		0A9478BA21C0A485002C430E /* JXPhotoBrowserBaseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserBaseDelegate.swift; sourceTree = "<group>"; };
+		0A9478BB21C0A485002C430E /* JXPhotoBrowserBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserBaseCell.swift; sourceTree = "<group>"; };
+		0A9478BC21C0A485002C430E /* JXLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLocalDataSource.swift; sourceTree = "<group>"; };
+		0A9478BE21C0A485002C430E /* JXPhotoBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserDelegate.swift; sourceTree = "<group>"; };
+		0A9478BF21C0A485002C430E /* JXPhotoBrowserTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserTransitioningDelegate.swift; sourceTree = "<group>"; };
+		0A9478C021C0A485002C430E /* JXPhotoBrowserDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserDataSource.swift; sourceTree = "<group>"; };
+		0A9478C221C0A485002C430E /* JXPhotoBrowserZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomAnimator.swift; sourceTree = "<group>"; };
+		0A9478C321C0A485002C430E /* JXPhotoBrowserFadePresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserFadePresentingAnimator.swift; sourceTree = "<group>"; };
+		0A9478C421C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserFadeDismissingAnimator.swift; sourceTree = "<group>"; };
+		0A9478C521C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomPresentingAnimator.swift; sourceTree = "<group>"; };
+		0A9478C621C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomDismissingAnimator.swift; sourceTree = "<group>"; };
+		0A9478E321C0A49E002C430E /* JXKingfisherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXKingfisherLoader.swift; sourceTree = "<group>"; };
+		0A9478EC21C0A726002C430E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9478FE21C0A80E002C430E /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A9478FF21C0A80F002C430E /* LongPressedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressedViewController.swift; sourceTree = "<group>"; };
+		0A94790021C0A80F002C430E /* CustomCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
+		0A94790121C0A80F002C430E /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		0A94790221C0A80F002C430E /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A94790321C0A80F002C430E /* LocalNumberControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNumberControlViewController.swift; sourceTree = "<group>"; };
+		0A94790421C0A80F002C430E /* LocalImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalImageViewController.swift; sourceTree = "<group>"; };
+		0A94790521C0A80F002C430E /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		0A94790621C0A80F002C430E /* ZoomFrameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomFrameViewController.swift; sourceTree = "<group>"; };
+		0A94790721C0A80F002C430E /* ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
+		0A94790821C0A80F002C430E /* LocalDefaultPageControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDefaultPageControlViewController.swift; sourceTree = "<group>"; };
+		0A94790921C0A80F002C430E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A94790A21C0A80F002C430E /* NetworkingImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingImageViewController.swift; sourceTree = "<group>"; };
+		0A94790B21C0A80F002C430E /* ResourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceModel.swift; sourceTree = "<group>"; };
+		0A94790D21C0A810002C430E /* CustomDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDelegate.swift; sourceTree = "<group>"; };
+		0A94790E21C0A810002C430E /* GIFImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFImageViewController.swift; sourceTree = "<group>"; };
+		0A94790F21C0A810002C430E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A94791021C0A810002C430E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		0A94791121C0A810002C430E /* RawImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawImageViewController.swift; sourceTree = "<group>"; };
+		0A94791421C0A810002C430E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		0A94792C21C0A9DA002C430E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A94793221C0AC44002C430E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A94793521C0C1D2002C430E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +134,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A94793621C0C1D2002C430E /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9478E921C0A726002C430E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A94793C21C0C39E002C430E /* Kingfisher.framework in Frameworks */,
+				0A94792B21C0A853002C430E /* PhotoBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,7 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				0A94789C21C0A005002C430E /* PhotoBrowser */,
+				0A9478ED21C0A726002C430E /* Example */,
 				0A94789B21C0A005002C430E /* Products */,
+				2CF0926116392E51925C4D28 /* Pods */,
+				0A94793421C0C1D1002C430E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0A94789A21C0A005002C430E /* PhotoBrowser.framework */,
+				0A9478EC21C0A726002C430E /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +173,154 @@
 		0A94789C21C0A005002C430E /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				0A9478E221C0A49E002C430E /* Kingfisher */,
+				0A9478A521C0A438002C430E /* Core */,
 				0A94789D21C0A005002C430E /* PhotoBrowser.h */,
 				0A94789E21C0A005002C430E /* Info.plist */,
 			);
 			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		0A9478A521C0A438002C430E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478C121C0A485002C430E /* Animator */,
+				0A9478B721C0A485002C430E /* Enhance */,
+				0A9478BC21C0A485002C430E /* JXLocalDataSource.swift */,
+				0A9478AD21C0A485002C430E /* JXPhotoBrowser.swift */,
+				0A9478BB21C0A485002C430E /* JXPhotoBrowserBaseCell.swift */,
+				0A9478BA21C0A485002C430E /* JXPhotoBrowserBaseDelegate.swift */,
+				0A9478A621C0A485002C430E /* Networking */,
+				0A9478BD21C0A485002C430E /* Protocol */,
+				0A9478AE21C0A485002C430E /* Transition */,
+				0A9478B321C0A485002C430E /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A9478A621C0A485002C430E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478A721C0A485002C430E /* JXPhotoBrowserProgressView.swift */,
+				0A9478A821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift */,
+				0A9478A921C0A485002C430E /* JXNetworkingDataSource.swift */,
+				0A9478AA21C0A485002C430E /* JXRawImageDataSource.swift */,
+				0A9478AB21C0A485002C430E /* JXPhotoLoader.swift */,
+				0A9478AC21C0A485002C430E /* JXPhotoBrowserNetworkingCell.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0A9478AE21C0A485002C430E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478AF21C0A485002C430E /* JXPhotoBrowserFadeTransitioning.swift */,
+				0A9478B021C0A485002C430E /* JXPhotoBrowserZoomTransitioning.swift */,
+				0A9478B121C0A485002C430E /* JXPhotoBrowserPresentationController.swift */,
+				0A9478B221C0A485002C430E /* JXPhotoBrowserTransitioning.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		0A9478B321C0A485002C430E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478B421C0A485002C430E /* UICollectionView+JX.swift */,
+				0A9478B521C0A485002C430E /* UIViewController+JX.swift */,
+				0A9478B621C0A485002C430E /* JXNamespace.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0A9478B721C0A485002C430E /* Enhance */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478B821C0A485002C430E /* JXNumberPageControlDelegate.swift */,
+				0A9478B921C0A485002C430E /* JXDefaultPageControlDelegate.swift */,
+			);
+			path = Enhance;
+			sourceTree = "<group>";
+		};
+		0A9478BD21C0A485002C430E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478BE21C0A485002C430E /* JXPhotoBrowserDelegate.swift */,
+				0A9478BF21C0A485002C430E /* JXPhotoBrowserTransitioningDelegate.swift */,
+				0A9478C021C0A485002C430E /* JXPhotoBrowserDataSource.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0A9478C121C0A485002C430E /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478C221C0A485002C430E /* JXPhotoBrowserZoomAnimator.swift */,
+				0A9478C321C0A485002C430E /* JXPhotoBrowserFadePresentingAnimator.swift */,
+				0A9478C421C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift */,
+				0A9478C521C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift */,
+				0A9478C621C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		0A9478E221C0A49E002C430E /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				0A9478E321C0A49E002C430E /* JXKingfisherLoader.swift */,
+			);
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		0A9478ED21C0A726002C430E /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0A94793221C0AC44002C430E /* Info.plist */,
+				0A94792C21C0A9DA002C430E /* AppDelegate.swift */,
+				0A94791221C0A810002C430E /* Base.lproj */,
+				0A94790221C0A80F002C430E /* BaseCollectionViewCell.swift */,
+				0A94790521C0A80F002C430E /* BaseCollectionViewController.swift */,
+				0A94791021C0A810002C430E /* CustomCell.swift */,
+				0A94790021C0A80F002C430E /* CustomCellViewController.swift */,
+				0A94790D21C0A810002C430E /* CustomDelegate.swift */,
+				0A94790E21C0A810002C430E /* GIFImageViewController.swift */,
+				0A94790F21C0A810002C430E /* HomeViewController.swift */,
+				0A94790921C0A80F002C430E /* Images.xcassets */,
+				0A94790821C0A80F002C430E /* LocalDefaultPageControlViewController.swift */,
+				0A94790421C0A80F002C430E /* LocalImageViewController.swift */,
+				0A94790321C0A80F002C430E /* LocalNumberControlViewController.swift */,
+				0A9478FF21C0A80F002C430E /* LongPressedViewController.swift */,
+				0A94790A21C0A80F002C430E /* NetworkingImageViewController.swift */,
+				0A94790121C0A80F002C430E /* Photos.plist */,
+				0A94791121C0A810002C430E /* RawImageViewController.swift */,
+				0A94790B21C0A80F002C430E /* ResourceModel.swift */,
+				0A94790621C0A80F002C430E /* ZoomFrameViewController.swift */,
+				0A94790721C0A80F002C430E /* ZoomViewController.swift */,
+				0A9478FE21C0A80E002C430E /* Example-Bridging-Header.h */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		0A94791221C0A810002C430E /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0A94791321C0A810002C430E /* LaunchScreen.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		0A94793421C0C1D1002C430E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A94793521C0C1D2002C430E /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CF0926116392E51925C4D28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,7 +344,7 @@
 				0A94789521C0A005002C430E /* Headers */,
 				0A94789621C0A005002C430E /* Sources */,
 				0A94789721C0A005002C430E /* Frameworks */,
-				0A94789821C0A005002C430E /* Resources */,
+				0A94793B21C0C2AF002C430E /* Copy Framework */,
 			);
 			buildRules = (
 			);
@@ -84,17 +355,42 @@
 			productReference = 0A94789A21C0A005002C430E /* PhotoBrowser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0A9478EB21C0A726002C430E /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9478FB21C0A729002C430E /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				0A9478E821C0A726002C430E /* Sources */,
+				0A9478E921C0A726002C430E /* Frameworks */,
+				0A9478EA21C0A726002C430E /* Resources */,
+				0A94793D21C0C3AE002C430E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A94792A21C0A831002C430E /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 0A9478EC21C0A726002C430E /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0A94789121C0A005002C430E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = maizifeng;
 				TargetAttributes = {
 					0A94789921C0A005002C430E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					0A9478EB21C0A726002C430E = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -104,6 +400,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0A94789021C0A005002C430E;
 			productRefGroup = 0A94789B21C0A005002C430E /* Products */;
@@ -111,29 +408,144 @@
 			projectRoot = "";
 			targets = (
 				0A94789921C0A005002C430E /* PhotoBrowser */,
+				0A9478EB21C0A726002C430E /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A94789821C0A005002C430E /* Resources */ = {
+		0A9478EA21C0A726002C430E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A94791721C0A810002C430E /* Photos.plist in Resources */,
+				0A94792821C0A810002C430E /* LaunchScreen.xib in Resources */,
+				0A94791F21C0A810002C430E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A94793B21C0C2AF002C430E /* Copy Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = "Copy Framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		0A94793D21C0C3AE002C430E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A94789621C0A005002C430E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9478D321C0A485002C430E /* UIViewController+JX.swift in Sources */,
+				0A9478D621C0A485002C430E /* JXDefaultPageControlDelegate.swift in Sources */,
+				0A9478D921C0A485002C430E /* JXLocalDataSource.swift in Sources */,
+				0A9478C821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift in Sources */,
+				0A9478E021C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift in Sources */,
+				0A9478DB21C0A485002C430E /* JXPhotoBrowserTransitioningDelegate.swift in Sources */,
+				0A9478D521C0A485002C430E /* JXNumberPageControlDelegate.swift in Sources */,
+				0A9478E121C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift in Sources */,
+				0A9478DD21C0A485002C430E /* JXPhotoBrowserZoomAnimator.swift in Sources */,
+				0A9478D821C0A485002C430E /* JXPhotoBrowserBaseCell.swift in Sources */,
+				0A9478D121C0A485002C430E /* JXPhotoBrowserTransitioning.swift in Sources */,
+				0A9478D221C0A485002C430E /* UICollectionView+JX.swift in Sources */,
+				0A9478D021C0A485002C430E /* JXPhotoBrowserPresentationController.swift in Sources */,
+				0A9478CE21C0A485002C430E /* JXPhotoBrowserFadeTransitioning.swift in Sources */,
+				0A9478E621C0A49E002C430E /* JXKingfisherLoader.swift in Sources */,
+				0A9478C921C0A485002C430E /* JXNetworkingDataSource.swift in Sources */,
+				0A9478D421C0A485002C430E /* JXNamespace.swift in Sources */,
+				0A9478CB21C0A485002C430E /* JXPhotoLoader.swift in Sources */,
+				0A9478DF21C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift in Sources */,
+				0A9478C721C0A485002C430E /* JXPhotoBrowserProgressView.swift in Sources */,
+				0A9478CD21C0A485002C430E /* JXPhotoBrowser.swift in Sources */,
+				0A9478CA21C0A485002C430E /* JXRawImageDataSource.swift in Sources */,
+				0A9478CF21C0A485002C430E /* JXPhotoBrowserZoomTransitioning.swift in Sources */,
+				0A9478D721C0A485002C430E /* JXPhotoBrowserBaseDelegate.swift in Sources */,
+				0A9478DA21C0A485002C430E /* JXPhotoBrowserDelegate.swift in Sources */,
+				0A9478DC21C0A485002C430E /* JXPhotoBrowserDataSource.swift in Sources */,
+				0A9478CC21C0A485002C430E /* JXPhotoBrowserNetworkingCell.swift in Sources */,
+				0A9478DE21C0A485002C430E /* JXPhotoBrowserFadePresentingAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9478E821C0A726002C430E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A94792021C0A810002C430E /* NetworkingImageViewController.swift in Sources */,
+				0A94792421C0A810002C430E /* GIFImageViewController.swift in Sources */,
+				0A94792321C0A810002C430E /* CustomDelegate.swift in Sources */,
+				0A94792121C0A810002C430E /* ResourceModel.swift in Sources */,
+				0A94791A21C0A810002C430E /* LocalImageViewController.swift in Sources */,
+				0A94792521C0A810002C430E /* HomeViewController.swift in Sources */,
+				0A94792621C0A810002C430E /* CustomCell.swift in Sources */,
+				0A94791521C0A810002C430E /* LongPressedViewController.swift in Sources */,
+				0A94791E21C0A810002C430E /* LocalDefaultPageControlViewController.swift in Sources */,
+				0A94791921C0A810002C430E /* LocalNumberControlViewController.swift in Sources */,
+				0A94791C21C0A810002C430E /* ZoomFrameViewController.swift in Sources */,
+				0A94791B21C0A810002C430E /* BaseCollectionViewController.swift in Sources */,
+				0A94791621C0A810002C430E /* CustomCellViewController.swift in Sources */,
+				0A94791821C0A810002C430E /* BaseCollectionViewCell.swift in Sources */,
+				0A94791D21C0A810002C430E /* ZoomViewController.swift in Sources */,
+				0A94792E21C0A9DA002C430E /* AppDelegate.swift in Sources */,
+				0A94792721C0A810002C430E /* RawImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A94792A21C0A831002C430E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A94789921C0A005002C430E /* PhotoBrowser */;
+			targetProxy = 0A94792921C0A831002C430E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A94791321C0A810002C430E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A94791421C0A810002C430E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0A9478A021C0A005002C430E /* Debug */ = {
@@ -261,6 +673,7 @@
 		0A9478A321C0A005002C430E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,8 +681,45 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PhotoBrowser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ddder.inner.PhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A9478A421C0A005002C430E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9X36Z7J75A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PhotoBrowser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,28 +731,52 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		0A9478A421C0A005002C430E /* Release */ = {
+		0A9478FC21C0A729002C430E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9X36Z7J75A;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PhotoBrowser/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.ddder.inner.PhotoBrowser;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.ddder.inner.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A9478FD21C0A729002C430E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X36Z7J75A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ddder.inner.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +799,15 @@
 			buildConfigurations = (
 				0A9478A321C0A005002C430E /* Debug */,
 				0A9478A421C0A005002C430E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9478FB21C0A729002C430E /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9478FC21C0A729002C430E /* Debug */,
+				0A9478FD21C0A729002C430E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
