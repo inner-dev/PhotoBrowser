@@ -64,7 +64,7 @@ class RawImageViewController: BaseCollectionViewController {
             return self.modelArray[index].thirdLevelUrl
         }
         // 视图代理，实现了数字型页码指示器
-        let delegate = JXNumberPageControlDelegate()
+        let delegate = JXDefaultPageControlDelegate()
         // 转场动画
         let trans = JXPhotoBrowserZoomTransitioning { (browser, index, view) -> UIView? in
             let indexPath = IndexPath(item: index, section: 0)

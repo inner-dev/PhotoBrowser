@@ -19,7 +19,7 @@ open class JXPhotoBrowserRawButtonCell: JXPhotoBrowserNetworkingCell {
         button.setTitle("查看原图", for: .highlighted)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         button.layer.borderColor = UIColor.white.cgColor
-        button.layer.borderWidth = 1 / UIScreen.main.scale
+        button.layer.borderWidth = 1
         button.layer.cornerRadius = 4
         button.layer.masksToBounds = true
         return button
@@ -49,7 +49,7 @@ open class JXPhotoBrowserRawButtonCell: JXPhotoBrowserNetworkingCell {
         rawButton.sizeToFit()
         rawButton.bounds.size.width += 14
         rawButton.center = CGPoint(x: contentView.bounds.width / 2,
-                                   y: contentView.bounds.height - 30 - rawButton.bounds.height)
+                                   y: contentView.bounds.height - 46 - rawButton.bounds.height)
     }
     
     /// 刷新数据
