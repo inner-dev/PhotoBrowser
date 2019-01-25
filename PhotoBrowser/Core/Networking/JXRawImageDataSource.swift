@@ -4,12 +4,11 @@
 //
 //  Created by JiongXing on 2018/10/14.
 //
-
 import Foundation
 import UIKit
 
 public class JXRawImageDataSource<T: JXPhotoBrowserRawButtonCell>: NSObject, JXPhotoBrowserDataSource {
-
+    
     /// 弱引用 PhotoBrowser
     public weak var browser: JXPhotoBrowser?
     

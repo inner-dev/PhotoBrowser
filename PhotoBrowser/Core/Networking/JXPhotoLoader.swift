@@ -19,4 +19,6 @@ public protocol JXPhotoLoader {
                   placeholder: UIImage?,
                   progressBlock: @escaping (_ receivedSize: Int64, _ totalSize: Int64) -> Void,
                   completionHandler: @escaping () -> Void)
+    
+    
 }

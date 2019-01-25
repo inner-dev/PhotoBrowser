@@ -35,7 +35,6 @@
 		0A9478DF21C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C421C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift */; };
 		0A9478E021C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C521C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift */; };
 		0A9478E121C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478C621C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift */; };
-		0A9478E621C0A49E002C430E /* JXKingfisherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478E321C0A49E002C430E /* JXKingfisherLoader.swift */; };
 		0A94791521C0A810002C430E /* LongPressedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478FF21C0A80F002C430E /* LongPressedViewController.swift */; };
 		0A94791621C0A810002C430E /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94790021C0A80F002C430E /* CustomCellViewController.swift */; };
 		0A94791721C0A810002C430E /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A94790121C0A80F002C430E /* Photos.plist */; };
@@ -57,7 +56,6 @@
 		0A94792821C0A810002C430E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A94791321C0A810002C430E /* LaunchScreen.xib */; };
 		0A94792B21C0A853002C430E /* PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94789A21C0A005002C430E /* PhotoBrowser.framework */; };
 		0A94792E21C0A9DA002C430E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94792C21C0A9DA002C430E /* AppDelegate.swift */; };
-		0A94793621C0C1D2002C430E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94793521C0C1D2002C430E /* Kingfisher.framework */; };
 		0A94793C21C0C39E002C430E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94793521C0C1D2002C430E /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,7 +100,6 @@
 		0A9478C421C0A485002C430E /* JXPhotoBrowserFadeDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserFadeDismissingAnimator.swift; sourceTree = "<group>"; };
 		0A9478C521C0A485002C430E /* JXPhotoBrowserZoomPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomPresentingAnimator.swift; sourceTree = "<group>"; };
 		0A9478C621C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomDismissingAnimator.swift; sourceTree = "<group>"; };
-		0A9478E321C0A49E002C430E /* JXKingfisherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXKingfisherLoader.swift; sourceTree = "<group>"; };
 		0A9478EC21C0A726002C430E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9478FE21C0A80E002C430E /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A9478FF21C0A80F002C430E /* LongPressedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressedViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A94793621C0C1D2002C430E /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +169,6 @@
 		0A94789C21C0A005002C430E /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				0A9478E221C0A49E002C430E /* Kingfisher */,
 				0A9478A521C0A438002C430E /* Core */,
 				0A94789D21C0A005002C430E /* PhotoBrowser.h */,
 				0A94789E21C0A005002C430E /* Info.plist */,
@@ -261,14 +256,6 @@
 				0A9478C621C0A485002C430E /* JXPhotoBrowserZoomDismissingAnimator.swift */,
 			);
 			path = Animator;
-			sourceTree = "<group>";
-		};
-		0A9478E221C0A49E002C430E /* Kingfisher */ = {
-			isa = PBXGroup;
-			children = (
-				0A9478E321C0A49E002C430E /* JXKingfisherLoader.swift */,
-			);
-			path = Kingfisher;
 			sourceTree = "<group>";
 		};
 		0A9478ED21C0A726002C430E /* Example */ = {
@@ -485,7 +472,6 @@
 				0A9478D221C0A485002C430E /* UICollectionView+JX.swift in Sources */,
 				0A9478D021C0A485002C430E /* JXPhotoBrowserPresentationController.swift in Sources */,
 				0A9478CE21C0A485002C430E /* JXPhotoBrowserFadeTransitioning.swift in Sources */,
-				0A9478E621C0A49E002C430E /* JXKingfisherLoader.swift in Sources */,
 				0A9478C921C0A485002C430E /* JXNetworkingDataSource.swift in Sources */,
 				0A9478D421C0A485002C430E /* JXNamespace.swift in Sources */,
 				0A9478CB21C0A485002C430E /* JXPhotoLoader.swift in Sources */,
