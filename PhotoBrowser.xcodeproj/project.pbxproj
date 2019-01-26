@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8BD11321FBFB67009175C0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94793521C0C1D2002C430E /* Kingfisher.framework */; };
+		0A8BD11521FBFBBA009175C0 /* JXKingfisherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BD11421FBFBBA009175C0 /* JXKingfisherLoader.swift */; };
 		0A94789F21C0A005002C430E /* PhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A94789D21C0A005002C430E /* PhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9478C721C0A485002C430E /* JXPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478A721C0A485002C430E /* JXPhotoBrowserProgressView.swift */; };
 		0A9478C821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9478A821C0A485002C430E /* JXPhotoBrowserRawButtonCell.swift */; };
@@ -56,7 +58,6 @@
 		0A94792821C0A810002C430E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A94791321C0A810002C430E /* LaunchScreen.xib */; };
 		0A94792B21C0A853002C430E /* PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94789A21C0A005002C430E /* PhotoBrowser.framework */; };
 		0A94792E21C0A9DA002C430E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A94792C21C0A9DA002C430E /* AppDelegate.swift */; };
-		0A94793C21C0C39E002C430E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94793521C0C1D2002C430E /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A8BD11421FBFBBA009175C0 /* JXKingfisherLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXKingfisherLoader.swift; sourceTree = "<group>"; };
 		0A94789A21C0A005002C430E /* PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A94789D21C0A005002C430E /* PhotoBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoBrowser.h; sourceTree = "<group>"; };
 		0A94789E21C0A005002C430E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,21 +126,16 @@
 		0A94792C21C0A9DA002C430E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A94793221C0AC44002C430E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A94793521C0C1D2002C430E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		0A9726CD21FBFD50005911AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0A9726CE21FBFD73005911AA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "../zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A94789721C0A005002C430E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0A9478E921C0A726002C430E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A94793C21C0C39E002C430E /* Kingfisher.framework in Frameworks */,
+				0A8BD11321FBFB67009175C0 /* Kingfisher.framework in Frameworks */,
 				0A94792B21C0A853002C430E /* PhotoBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +149,6 @@
 				0A94789C21C0A005002C430E /* PhotoBrowser */,
 				0A9478ED21C0A726002C430E /* Example */,
 				0A94789B21C0A005002C430E /* Products */,
-				2CF0926116392E51925C4D28 /* Pods */,
 				0A94793421C0C1D1002C430E /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -283,6 +279,7 @@
 				0A94790621C0A80F002C430E /* ZoomFrameViewController.swift */,
 				0A94790721C0A80F002C430E /* ZoomViewController.swift */,
 				0A9478FE21C0A80E002C430E /* Example-Bridging-Header.h */,
+				0A8BD11421FBFBBA009175C0 /* JXKingfisherLoader.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -301,13 +298,6 @@
 				0A94793521C0C1D2002C430E /* Kingfisher.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2CF0926116392E51925C4D28 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,8 +320,6 @@
 			buildPhases = (
 				0A94789521C0A005002C430E /* Headers */,
 				0A94789621C0A005002C430E /* Sources */,
-				0A94789721C0A005002C430E /* Frameworks */,
-				0A94793B21C0C2AF002C430E /* Copy Framework */,
 			);
 			buildRules = (
 			);
@@ -386,8 +374,8 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 0A94789021C0A005002C430E;
 			productRefGroup = 0A94789B21C0A005002C430E /* Products */;
@@ -414,25 +402,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A94793B21C0C2AF002C430E /* Copy Framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
-			);
-			name = "Copy Framework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
-		};
 		0A94793D21C0C3AE002C430E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,6 +467,7 @@
 				0A94792121C0A810002C430E /* ResourceModel.swift in Sources */,
 				0A94791A21C0A810002C430E /* LocalImageViewController.swift in Sources */,
 				0A94792521C0A810002C430E /* HomeViewController.swift in Sources */,
+				0A8BD11521FBFBBA009175C0 /* JXKingfisherLoader.swift in Sources */,
 				0A94792621C0A810002C430E /* CustomCell.swift in Sources */,
 				0A94791521C0A810002C430E /* LongPressedViewController.swift in Sources */,
 				0A94791E21C0A810002C430E /* LocalDefaultPageControlViewController.swift in Sources */,
@@ -527,6 +497,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A94791421C0A810002C430E /* Base */,
+				0A9726CD21FBFD50005911AA /* en */,
+				0A9726CE21FBFD73005911AA /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -538,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -586,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -602,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -644,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

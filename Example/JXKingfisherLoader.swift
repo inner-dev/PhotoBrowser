@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import PhotoBrowser
 import Kingfisher
 
 public class JXKingfisherLoader: JXPhotoLoader {
@@ -36,14 +37,14 @@ public class JXKingfisherLoader: JXPhotoLoader {
             options: nil,
             progressBlock: { (receivedSize, totalSize) in
                 progressBlock(receivedSize, totalSize)
-            },
+        },
             completionHandler:{ result in
                 switch result {
                 case .success(_):
-                     completionHandler()
+                    completionHandler()
                 case .failure(_):
                     break
                 }
-            })
+        })
     }
 }
